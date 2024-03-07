@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #C6EA8D , #FE90AF);
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-image: linear-gradient(to right, #D8B5FF , #1EAE98);
+    width: 100%;
+    height: 67px;
+    color: #00FFFF;
+    padding: 12px 0 0 20px;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+.field {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field .holder {
+    width: 300px;
+    padding: 10px 3px 3px 10px;
+    background-color: #aaf0f0;
+    box-shadow: 0 3px 6px cornflowerblue;
+}
+
+.field input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 3px;
+    font-size: large;
+}
+.field textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+
+.field .btn {
+    outline: none;
+    border-style: none;
+    margin-left: 5px;
+    color : #00FFFF;
+    background-color: #FF69B4;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.notes {
+    display: inline-block;
+    min-width: 250px;
+    margin: 10px;
+    background-color: #aaf0f0;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 3px 6px cornflowerblue;
+    float: left;
+}
+
+.notes .h1 {
+    font-size: 1.1em;
+}
+
+.notes p {
+    font-size: 1.1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.notes .del {
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    padding: 3px;
+    color : #FF69B4;
+    background-color: transparent;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0;
+}
+
+footer p {
+    color: rgb(82, 82, 82);
+}
+
+
+@media screen and (max-width: 600px){
+    .notes{
+        min-width: 80%;
+    }
+}
+
