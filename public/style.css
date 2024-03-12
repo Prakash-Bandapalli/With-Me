@@ -71,6 +71,7 @@ body {
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 3px 6px cornflowerblue;
     float: left;
+    border-radius: 5px;
 }
 
 .notes .h1 {
