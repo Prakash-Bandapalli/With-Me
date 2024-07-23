@@ -2,20 +2,22 @@ import { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
-const InputField = (props) => {
+
+const InputField = ({ onAdd }) => {
   const [inputH, setInputH] = useState("");
   const [inputC, setInputC] = useState("");
   const [field, setField] = useState(false);
+
   const handleChange1 = (event) => {
     setInputH(event.target.value);
   };
   const handleChange2 = (event) => {
     setInputC(event.target.value);
   };
-  
-  const handleField = (event)=>{
+
+  const handleField = (event) => {
     setField(true);
-  }
+  };
   return (
     <div className="field">
       <div className="holder">
@@ -38,7 +40,7 @@ const InputField = (props) => {
         <Fab
           className="btn"
           onClick={(event) => {
-            props.onAdd(inputH, inputC, event);
+            onAdd(inputH, inputC, event);
             setInputH("");
             setInputC("");
           }}
